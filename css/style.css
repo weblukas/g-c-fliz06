@@ -1,0 +1,205 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 6em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #263238;
+    text-shadow: 2px 2px #000;
+}
+
+.logo h2 {
+    margin: 100px 0;
+    font-size: 4em;
+    color: #000;
+}
+
+.heroimg {
+    position: relative;
+    opacity: 0.7;
+    background-image: url("../images/slide-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60%;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-about {
+    background-color: #fff;
+    color: #666;
+    min-height: 500px;
+}
+
+.section-about p {
+    opacity: 0.7;
+}
+
+.boxes span {
+    margin: 20px;
+    color: #000;
+}
+
+.boxes {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.fas {
+    width: 400px;
+    height: 400px;
+}
+
+.prof {
+    width: 300px;
+    height: 169px;
+    background: url("../images/chess-small_03.jpg") no-repeat;
+    margin: 50px auto;
+}
+
+.pasja {
+    width: 300px;
+    height: 169px;
+    background: url("../images/hand-small.jpg") no-repeat;
+    margin: 50px auto;
+}
+
+.elast {
+    width: 300px;
+    height: 169px;
+    background: #333 url("../images/building-small.jpg") no-repeat;
+    margin: 50px auto;
+}
+
+hr {
+    width: 70%;
+    opacity: 0.4;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+    outline: 5px red;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.gallery li {
+    float: left;
+    width: 500px;
+    list-style: none;
+}
+
+.gallery img {
+    width: 80%;
+    height: 80%;
+    margin: 40px 40px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    transition: all 0.7s ease-in-out;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+h3 {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #000;
+}
+
+h4 {
+    margin: 0 40px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    min-height: 260px;
+    background: #545151;
+}
+
+footer h4 {
+    font-size: 1.1em;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 320px) {
+    .heroimg {
+        display: block;
+        max-height: 300px;
+        max-width: 350px;
+        height: auto;
+        width: auto;
+    }
+    .logo h1 {
+        font-size: 0.5em;
+    }
+    .logo h2 {
+        display: none;
+    }
+    .boxes {
+        display: block;
+    }
+    
+    .boxes span {
+        font-size: 0.9em;
+    }
+    
+    .boxes p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .heroimg {
+        height: 50%;
+    }
+    .logo h1 {
+        font-size: 4em;
+    }
+    .logo h2 {
+        font-size: 2em;
+        margin-top: 70px;
+    }
+}
