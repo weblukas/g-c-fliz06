@@ -19,21 +19,21 @@ html {
     margin: 0;
     font-size: 6em;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #263238;
+    font-family: 'Spectral', serif;
+    color:rgba(0, 0, 0, 0.9);
     text-shadow: 2px 2px #000;
 }
 
 .logo h2 {
     margin: 100px 0;
-    font-size: 4em;
-    color: #000;
+    font-size: 3.5em;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .heroimg {
     position: relative;
     opacity: 0.7;
-    background-image: url("../images/slide-1.jpg");
+    background-image: url("../images/slide-1darker.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +42,7 @@ html {
 }
 
 .section {
+    
     text-align: center;
     padding: 50px 80px;
 }
@@ -103,7 +104,6 @@ hr {
 .container {
     margin: 0 auto;
     max-width: 1350px;
-    outline: 5px red;
 }
 
 .gallery {
@@ -132,6 +132,7 @@ hr {
     opacity: 1;
     transform: scale(1.1);
 }
+
 
 h3 {
     text-align: center;
@@ -167,16 +168,19 @@ footer p {
 @media only screen and (max-width: 320px) {
     .heroimg {
         display: block;
-        max-height: 300px;
+        height: 100px;
         max-width: 350px;
         height: auto;
         width: auto;
     }
     .logo h1 {
-        font-size: 0.5em;
+        font-size: 0.2em;
     }
     .logo h2 {
         display: none;
+    }
+    .section-about h3 {
+        font-size: 1.2em;
     }
     .boxes {
         display: block;
@@ -189,7 +193,28 @@ footer p {
     .boxes p {
         font-size: 0.8em;
     }
+
+    .fas {
+        width: 100%;
+    }
+
+    .prof {
+        width: 100%;
+    }
+  
+    .elast {
+        width: 100%;
+    }
+
+    .pasja {
+        width: 100%;
+    }
+
+    .gallery {
+        padding: 0;
+    }
 }
+
 
 @media only screen and (max-width: 950px) {
     .heroimg {

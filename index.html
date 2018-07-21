@@ -7,52 +7,70 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
 </head>
 
 <body>
+   <!-- Header -->
     <div class="heroimg">
         <div class="logo">
-            <h1>G&C-Fliz s.c</h1>
+            <h1>G&C-Fliz</h1>
             <h2>Układamy płytki... najszybciej</h2> 
         </div>
     </div>
-        <section class="section section-about">
-            <h3>O NAS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ante accumsan nunc egestas tincidunt.
-                <br> Aenean dictum id nulla vel lacinia. Curabitur pellentesque elementum turpis. Aenean tincidunt eget nibh sed ultricies.
-                <br> Morbi lectus dolor, fringilla a mi et, porta sollicitudin ipsum. Sed tristique vulputate mollis.</p>
-            <div class="boxes">
-                <div class="fas fa-wrench"><span>Profesjonalizm</span>
-                    <br>
-                    <p>Każde zlecenie jest dla nas ważne</p>
-                    <div class="prof"></div>
-                </div>
-                <div class="fas fa-heart"><span>Pasja</span>
-                    <p>Lorem Intendum sacramentum</p>
-                    <div class="pasja"></div>
-                </div>
-                <div class="fas fa-calendar-alt"><span>Elastyczność</span>
-                    <p>Lorem ipsum fiksum rekolum iderium.</p>
-                    <div class="elast"></div>
-                </div>
+    <!-- About us section -->
+    <section class="section section-about">
+        <h3>O NAS </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ante accumsan nunc egestas tincidunt.
+            <br> Aenean dictum id nulla vel lacinia. Curabitur pellentesque elementum turpis. Aenean tincidunt eget nibh sed ultricies.
+            <br> Morbi lectus dolor, fringilla a mi et, porta sollicitudin ipsum. Sed tristique vulputate mollis.</p>
+        <div class="boxes">
+            <div class="fas fa-wrench"><span>Profesjonalizm</span>
+                <br>
+                <p>Każde zlecenie jest dla nas ważne</p>
+                <div class="prof"></div>
             </div>
-        </section>
-        <hr>
-        <h3>GALERIA</h3>
-        <div class="container">
-            <ul class="gallery">
-                <li><img src="images/slide-1.jpg" alt="Łazienka1"></li>
-                <li><img class="rotate" src="images/slide-2.jpg" alt="Łazienka2"></li>
-                <li><img src="images/slide-3.jpg" alt="Łazienka3"></li>
-                <li><img src="images/slide-4.jpg" alt="Łazienka4"></li>
-            </ul>
+            <div class="fas fa-heart"><span>Pasja</span>
+                <p>Lorem Intendum sacramentum</p>
+                <div class="pasja"></div>
+            </div>
+            <div class="fas fa-calendar-alt"><span>Elastyczność</span>
+                <p>Lorem ipsum fiksum rekolum iderium.</p>
+                <div class="elast"></div>
+            </div>
         </div>
-        <footer>
-            <h4>Kontakt</h4>
-            <p>Daniel Chrabąszcz
-                <br>Borki 132
-                <br>woj Małopolskie</p>
-        </footer>
+    </section>
+    <hr>
+    <!-- Gallery -->
+    <h3>GALERIA</h3>
+    <div class="container">
+        <ul class="gallery">
+            <li>
+                <a href="images/slide-1.jpg" class="swipebox" title="one"><img src="images/slide-1.jpg" alt="Łazienka2"></a>
+            </li>
+            <li>
+                <a href="images/slide-2.jpg" class="swipebox" title="two"><img src="images/slide-2.jpg" alt="Łazienka2"></a>
+            </li>
+            <li>
+                <a href="images/slide-3.jpg" class="swipebox" title="three"><img src="images/slide-3.jpg" alt="Łazienka2"></a>
+            </li>
+            <li>
+                <a href="images/slide-4.jpg" class="swipebox" title="four"><img src="images/slide-4.jpg" alt="Łazienka2"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <h4>Kontakt</h4>
+        <p>Daniel Chrabąszcz
+            <br>Borki 132
+            <br>woj Małopolskie</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run('.gallery');
+    </script>
 </body>
 
 </html>
