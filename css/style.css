@@ -13,6 +13,8 @@ html {
     text-align: center;
     position: relative;
     top: 30%;
+    
+
 }
 
 .logo h1 {
@@ -22,12 +24,52 @@ html {
     font-family: 'Spectral', serif;
     color:rgba(0, 0, 0, 0.9);
     text-shadow: 2px 2px #000;
+    
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .logo h2 {
     margin: 100px 0;
     font-size: 3.5em;
     color: rgba(0, 0, 0, 0.7);
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .heroimg {
