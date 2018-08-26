@@ -14,9 +14,9 @@ html {
     position: relative;
     top: 30%;
     
+    
 
 }
-
 .logo h1 {
     margin: 0;
     font-size: 6em;
@@ -28,6 +28,7 @@ html {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    
 }
 
 .logo h2 {
@@ -38,7 +39,11 @@ html {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    
+    
 }
+
+
 
 @keyframes moveInLeft {
     0% {
@@ -81,7 +86,10 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 60%;
+    -webkit-backface-visibility: hidden;
+   
 }
+
 
 .section {
     
