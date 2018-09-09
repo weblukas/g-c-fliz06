@@ -87,6 +87,9 @@ html {
     background-attachment: fixed;
     height: 60%;
     -webkit-backface-visibility: hidden;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
    
 }
 
